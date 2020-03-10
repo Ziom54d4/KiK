@@ -83,8 +83,7 @@ function endGame(){
     
     for(i=0; i<=8; i++)
     {
-        if(board[i][i].clicked)
-        {
+        board[i][i].onclick() = function() {
             document.getElementById("wynik").innerHTML = "Remis! " + "<a href='javascript:location.reload()'>Jeszcze raz?</a>";
         }
     }
