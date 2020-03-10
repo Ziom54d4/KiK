@@ -81,9 +81,9 @@ function endGame(){
         return true;
     }
     
-        if(board[0][0].clicked == true && board[0][1].clicked == true && board[0][2].clicked == true && board[1][0].clicked == true && board[1][1].clicked == true && board[1][2].clicked == true && board[2][0].clicked == true && board[2][1].clicked == true && board[2][2].clicked == true)
-        {
-            document.getElementById("wynik").innerHTML = "Remis! " + "<a href='javascript:location.reload()'>Jeszcze raz?</a>";
-            return true;
-        }
+    if(board[0][0].clicked == true && board[0][1].clicked == true && board[0][2].clicked == true && board[1][0].clicked == true && board[1][1].clicked == true && board[1][2].clicked == true && board[2][0].clicked == true && board[2][1].clicked == true && board[2][2].clicked == true)
+    {
+        document.getElementById("wynik").innerHTML = "Remis! " + "<a href='javascript:location.reload()'>Jeszcze raz?</a>";
+        return true;
+    }
 }
