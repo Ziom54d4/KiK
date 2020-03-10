@@ -10,7 +10,7 @@ var board = [
     [{ clicked: false, whatClicked: 'N' }, { clicked: false, whatClicked: 'N' }, { clicked: false, whatClicked: 'N' }]
 ];
 
-elementy = document.getElementsByClassName("komorka");
+var elementy = document.getElementsByClassName("komorka");
 for(i=0; i<elementy.length; i++)
 {
     elementy[i].addEventListener("click", funkcja);
@@ -83,7 +83,7 @@ function endGame(){
     
     for(i=0; i<=8; i++)
     {
-        board[i][i].onclick() = function() {
+        elementy[i].onclick() = function() {
             document.getElementById("wynik").innerHTML = "Remis! " + "<a href='javascript:location.reload()'>Jeszcze raz?</a>";
         }
     }
