@@ -1,0 +1,34 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.plansza
+{
+    border-collapse: collapse;
+    /*Sprawdzić jak to działa!*/
+}
+
+td 
+{
+    border: 1px solid black; /*Może mieć powiązanie ^*/
+    width: 90px;
+    height: 90px;
+}
+
+.wynik
+{
+    text-align: center;
+    margin-top: 10px;
+}
