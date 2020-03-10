@@ -84,9 +84,9 @@ function endGame(){
     for(i=0; i<=8; i++)
     {
         if(board = [
-        [{ clicked: false, whatClicked:'N' }, { clicked: false, whatClicked: 'N' }, { clicked: false, whatClicked: 'N'  }],
-        [{ clicked: false, whatClicked: 'N' }, { clicked: false, whatClicked: 'N' }, { clicked: false, whatClicked: 'N' }],
-        [{ clicked: false, whatClicked: 'N' }, { clicked: false, whatClicked: 'N' }, { clicked: false, whatClicked: 'N' }]
+        [{ clicked: true }, { clicked: true }, { clicked: true }],
+        [{ clicked: true }, { clicked: true }, { clicked: true }],
+        [{ clicked: true }, { clicked: true }, { clicked: true }]
         ])
         {
             document.getElementById("wynik").innerHTML = "Remis! " + "<a href='javascript:location.reload()'>Jeszcze raz?</a>";
