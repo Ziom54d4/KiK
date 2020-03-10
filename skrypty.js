@@ -83,8 +83,14 @@ function endGame(){
     
     for(i=0; i<=8; i++)
     {
-        elementy[i].onclick() = function() {
+        if(board = [
+        [{ clicked: false, whatClicked:'N' }, { clicked: false, whatClicked: 'N' }, { clicked: false, whatClicked: 'N'  }],
+        [{ clicked: false, whatClicked: 'N' }, { clicked: false, whatClicked: 'N' }, { clicked: false, whatClicked: 'N' }],
+        [{ clicked: false, whatClicked: 'N' }, { clicked: false, whatClicked: 'N' }, { clicked: false, whatClicked: 'N' }]
+        ])
+        {
             document.getElementById("wynik").innerHTML = "Remis! " + "<a href='javascript:location.reload()'>Jeszcze raz?</a>";
+            return true;
         }
     }
 }
