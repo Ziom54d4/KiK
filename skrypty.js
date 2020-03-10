@@ -81,13 +81,12 @@ function endGame(){
         return true;
     }
     
-        if(board = [
-        [{ clicked: true } && { clicked: true } && { clicked: true }] &&
-        [{ clicked: true } && { clicked: true } && { clicked: true }] &&
-        [{ clicked: true } && { clicked: true } && { clicked: true }]
-        ])
+    for(i=0; i<=8; i++)
+    {
+        if(board[i][i].clicked == true)
         {
             document.getElementById("wynik").innerHTML = "Remis! " + "<a href='javascript:location.reload()'>Jeszcze raz?</a>";
             return true;
         }
+    }
 }
