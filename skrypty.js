@@ -81,8 +81,6 @@ function endGame(){
         return true;
     }
     
-    for(i=0; i<=8; i++)
-    {
         if(board = [
         [{ clicked: true } && { clicked: true } && { clicked: true }] &&
         [{ clicked: true } && { clicked: true } && { clicked: true }] &&
@@ -92,5 +90,4 @@ function endGame(){
             document.getElementById("wynik").innerHTML = "Remis! " + "<a href='javascript:location.reload()'>Jeszcze raz?</a>";
             return true;
         }
-    }
 }
