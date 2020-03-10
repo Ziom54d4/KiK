@@ -80,4 +80,12 @@ function endGame(){
         document.getElementById("wynik").innerHTML = "Wygrał krzyżyk! " + "<a href='javascript:location.reload()'>Jeszcze raz?</a>";
         return true;
     }
+    
+    for(i=0; i<=8; i++)
+    {
+        if(board[i][i].clicked)
+        {
+            document.getElementById("wynik").innerHTML = "Remis! " + "<a href='javascript:location.reload()'>Jeszcze raz?</a>";
+        }
+    }
 }
